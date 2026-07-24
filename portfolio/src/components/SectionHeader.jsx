@@ -15,11 +15,11 @@ const SectionHeader = ({ label, title, description }) => {
           {label}
         </span>
       )}
-      <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-white mb-4">
+      <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold text-slate-900 dark:text-white mb-4">
         {title}
       </h2>
       {description && (
-        <p className="text-white/40 text-base md:text-lg max-w-2xl leading-relaxed">
+        <p className="text-slate-500 dark:text-white/40 text-base md:text-lg max-w-2xl leading-relaxed">
           {description}
         </p>
       )}

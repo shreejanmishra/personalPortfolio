@@ -8,7 +8,7 @@ import Contact from "./pages/Contact";
 
 function App() {
   return (
-    <div className="min-h-screen bg-surface-950 text-white selection:bg-primary-500/30 selection:text-primary-100">
+    <div className="min-h-screen transition-colors duration-500 bg-slate-50 text-slate-900 dark:bg-surface-950 dark:text-white selection:bg-primary-500/30 selection:text-primary-900 dark:selection:text-primary-100">
       <Navbar />
       <main>
         <Routes>

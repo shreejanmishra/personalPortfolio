@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { GraduationCap, Calendar, MapPin, Award } from "lucide-react";
 import SectionHeader from "../components/SectionHeader";
 import ExperienceTimeline from "../components/ExperienceTimeline";
-import SkillsGrid from "../components/SkillsGrid";
+
 import { education } from "../data/portfolioData";
 
 const Experience = () => {
@@ -30,7 +30,7 @@ const Experience = () => {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
-            className="glass rounded-2xl p-6 md:p-8 hover:border-white/[0.12] transition-all duration-300"
+            className="glass rounded-2xl p-6 md:p-8 hover:border-slate-300 dark:hover:border-white/[0.12] transition-all duration-300"
           >
             <div className="flex flex-col md:flex-row md:items-center md:justify-between">
               <div className="flex items-start gap-4">
@@ -38,11 +38,11 @@ const Experience = () => {
                   <GraduationCap size={22} className="text-amber-400" />
                 </div>
                 <div>
-                  <h3 className="text-lg font-display font-bold text-white mb-1">
+                  <h3 className="text-lg font-display font-bold text-slate-900 dark:text-white mb-1">
                     {education.degree}
                   </h3>
-                  <p className="text-white/50 text-sm">{education.school}</p>
-                  <div className="flex items-center gap-4 mt-2 text-white/30 text-sm">
+                  <p className="text-slate-600 dark:text-white/50 text-sm">{education.school}</p>
+                  <div className="flex items-center gap-4 mt-2 text-slate-400 dark:text-white/30 text-sm">
                     <span className="flex items-center gap-1.5">
                       <Calendar size={13} />
                       {education.period}
@@ -67,15 +67,7 @@ const Experience = () => {
           </motion.div>
         </div>
 
-        {/* Skills */}
-        <div>
-          <SectionHeader
-            label="Expertise"
-            title="Skills & Technologies"
-            description="The tools and technologies I use to bring ideas to life."
-          />
-          <SkillsGrid />
-        </div>
+
       </div>
     </div>
   );

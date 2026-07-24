@@ -14,7 +14,7 @@ import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 overflow-hidden">
+    <section className="relative min-h-screen flex flex-col justify-center items-center text-center px-6 pt-32 pb-20 overflow-hidden">
       {/* Animated background orbs */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <div className="absolute top-[-15%] left-[-8%] w-[500px] h-[500px] bg-primary-500/[0.08] rounded-full blur-[120px] animate-float" />
@@ -46,13 +46,12 @@ const Hero = () => {
           className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full glass mb-8 text-sm"
         >
           <span className="w-2 h-2 rounded-full bg-accent-400 animate-pulse" />
-          <span className="text-white/60">Available for opportunities</span>
+          <span className="text-slate-600 dark:text-white/60">Available for opportunities</span>
         </motion.div>
 
         {/* Title */}
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-display font-bold tracking-tight mb-4 leading-[1.05]">
-          <span className="text-white">Shreejan</span>
-          <br />
+          <span className="text-slate-900 dark:text-white">Shreejan </span>
           <span className="gradient-text">Mishra</span>
         </h1>
 
@@ -61,7 +60,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="text-lg md:text-xl text-white/40 font-display font-light tracking-wide mb-4"
+          className="text-lg md:text-xl text-slate-500 dark:text-white/40 font-display font-light tracking-wide mb-4"
         >
           FULL STACK ENGINEER
         </motion.p>
@@ -70,7 +69,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.4, duration: 0.6 }}
-          className="text-base md:text-lg text-white/50 max-w-2xl mx-auto mb-6 leading-relaxed"
+          className="text-base md:text-lg text-left text-slate-600 dark:text-white/50 max-w-4xl mx-auto mb-6 leading-relaxed"
         >
           {personalInfo.summary}
         </motion.p>
@@ -80,7 +79,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.45, duration: 0.5 }}
-          className="flex items-center justify-center gap-2 text-white/30 text-sm mb-10"
+          className="flex items-center justify-center gap-2 text-slate-500 dark:text-white/30 text-sm mb-10"
         >
           <MapPin size={14} />
           <span>{personalInfo.location}</span>
@@ -106,7 +105,7 @@ const Hero = () => {
 
           <a
             href={`mailto:${personalInfo.email}`}
-            className="flex items-center gap-2 px-8 py-3.5 glass glass-hover rounded-xl font-medium text-white/80 hover:text-white"
+            className="flex items-center gap-2 px-8 py-3.5 glass glass-hover rounded-xl font-medium text-slate-700 dark:text-white/80 hover:text-slate-900 dark:hover:text-white"
           >
             <Mail size={18} />
             Get In Touch
@@ -147,7 +146,7 @@ const Hero = () => {
               aria-label={social.label}
               className="p-3 glass glass-hover rounded-xl"
             >
-              <social.icon size={20} className="text-white/50" />
+              <social.icon size={20} className="text-slate-500 dark:text-white/50" />
             </motion.a>
           ))}
         </motion.div>
@@ -168,7 +167,7 @@ const Hero = () => {
                   {metric.value}
                   {metric.suffix}
                 </div>
-                <div className="text-xs md:text-sm text-white/40 font-medium">
+                <div className="text-xs md:text-sm text-slate-500 dark:text-white/40 font-medium">
                   {metric.label}
                 </div>
               </div>
@@ -187,7 +186,7 @@ const Hero = () => {
         <motion.div
           animate={{ y: [0, 8, 0] }}
           transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
-          className="text-white/20"
+          className="text-slate-400 dark:text-white/20"
         >
           <ChevronDown size={24} />
         </motion.div>

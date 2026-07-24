@@ -132,23 +132,23 @@ const SkillsGrid = () => {
           transition={{ duration: 0.5, delay: idx * 0.08 }}
           className={`glass rounded-xl p-5 border ${
             skillCategoryBorders[category] || "border-white/10"
-          } hover:border-white/15 transition-all duration-300`}
+          } hover:border-slate-300 dark:hover:border-white/15 transition-all duration-300`}
         >
-          <h4 className="text-sm font-semibold text-white/70 mb-3 tracking-wide">
+          <h4 className="text-sm font-semibold text-slate-800 dark:text-white/70 mb-3 tracking-wide">
             {category}
           </h4>
           <div className="flex flex-wrap gap-1.5">
             {items.map((skill) => {
               const IconComponent = skillIconMap[skill];
               const iconColor =
-                skillCategoryIconColors[category] || "text-white/50";
+                skillCategoryIconColors[category] || "text-slate-500 dark:text-white/50";
 
               return (
                 <span
                   key={skill}
                   className={`inline-flex items-center gap-1.5 px-2.5 py-1.5 text-xs rounded-md bg-gradient-to-r ${
-                    skillCategoryColors[category] || "from-white/5 to-white/5"
-                  } text-white/60 font-medium`}
+                    skillCategoryColors[category] || "from-slate-100 to-slate-100 dark:from-white/5 dark:to-white/5"
+                  } text-slate-700 dark:text-white/60 font-medium`}
                 >
                   {IconComponent && (
                     <IconComponent className={`w-3.5 h-3.5 ${iconColor}`} />
