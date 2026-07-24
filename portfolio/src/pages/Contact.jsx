@@ -23,32 +23,32 @@ const ContactCard = ({ icon: Icon, label, value, href, copyable }) => {
   };
 
   return (
-    <div className="glass rounded-xl p-5 hover:border-white/[0.12] transition-all duration-300 group">
+    <div className="glass rounded-xl p-5 hover:border-slate-300 dark:hover:border-white/[0.12] transition-all duration-300 group">
       <div className="flex items-center justify-between">
         <div className="flex items-center gap-4">
           <div className="p-2.5 rounded-lg bg-primary-500/10 border border-primary-500/20">
             <Icon size={18} className="text-primary-400" />
           </div>
           <div>
-            <p className="text-xs text-white/30 mb-0.5">{label}</p>
+            <p className="text-xs text-slate-400 dark:text-white/30 mb-0.5">{label}</p>
             {href ? (
               <a
                 href={href}
                 target="_blank"
                 rel="noreferrer"
-                className="text-sm text-white/70 hover:text-white transition-colors"
+                className="text-sm text-slate-600 dark:text-white/70 hover:text-slate-900 dark:hover:text-white transition-colors"
               >
                 {value}
               </a>
             ) : (
-              <p className="text-sm text-white/70">{value}</p>
+              <p className="text-sm text-slate-600 dark:text-white/70">{value}</p>
             )}
           </div>
         </div>
         {copyable && (
           <button
             onClick={handleCopy}
-            className="p-2 rounded-lg hover:bg-white/[0.05] text-white/20 hover:text-white/50 transition-all"
+            className="p-2 rounded-lg hover:bg-slate-200 dark:hover:bg-white/[0.05] text-slate-400 dark:text-white/20 hover:text-slate-700 dark:hover:text-white/50 transition-all"
             aria-label={`Copy ${label}`}
           >
             {copied ? (
@@ -121,25 +121,25 @@ const Contact = () => {
           >
             <div className="glass rounded-2xl p-8 h-full flex flex-col justify-between">
               <div>
-                <h3 className="text-xl font-display font-bold text-white mb-3">
+                <h3 className="text-xl font-display font-bold text-slate-900 dark:text-white mb-3">
                   Let's Build Something Together
                 </h3>
-                <p className="text-white/40 text-sm leading-relaxed mb-8">
+                <p className="text-slate-500 dark:text-white/40 text-sm leading-relaxed mb-8">
                   Whether you need a full-stack application built from scratch,
                   UI/UX design expertise, or performance optimization for your
                   existing product — I'd love to hear about it.
                 </p>
 
                 <div className="space-y-4">
-                  <div className="flex items-center gap-3 text-sm text-white/50">
+                  <div className="flex items-center gap-3 text-sm text-slate-500 dark:text-white/50">
                     <span className="w-2 h-2 rounded-full bg-accent-400 animate-pulse" />
                     Available for full-time & freelance opportunities
                   </div>
-                  <div className="flex items-center gap-3 text-sm text-white/50">
+                  <div className="flex items-center gap-3 text-sm text-slate-500 dark:text-white/50">
                     <span className="w-2 h-2 rounded-full bg-primary-400" />
                     Open to remote & on-site roles
                   </div>
-                  <div className="flex items-center gap-3 text-sm text-white/50">
+                  <div className="flex items-center gap-3 text-sm text-slate-500 dark:text-white/50">
                     <span className="w-2 h-2 rounded-full bg-purple-400" />
                     Based in Bengaluru, India
                   </div>

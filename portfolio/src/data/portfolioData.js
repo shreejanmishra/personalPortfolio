@@ -146,7 +146,8 @@ export const projects = [
     cardColor: "from-orange-500/10 to-rose-500/10",
     borderColor: "border-orange-500/20",
     hoverBorder: "hover:border-orange-500/40",
-    github: "https://github.com/shreejanmishra",
+    liveUrl: "https://zageno-assignment.vercel.app/",
+    github: "https://github.com/shreejanmishra/zageno_assignment",
     highlights: [
       "ACID transactions preventing phantom inventory",
       "MongoDB $text B-Tree indexing for instant search",
@@ -175,8 +176,8 @@ export const projects = [
     cardColor: "from-primary-500/10 to-blue-500/10",
     borderColor: "border-primary-500/20",
     hoverBorder: "hover:border-primary-500/40",
-    liveUrl: "https://edastra.vercel.app",
-    github: "https://github.com/shreejanmishra",
+    liveUrl: "https://e-gamma-livid.vercel.app/",
+    github: "https://github.com/shreejanmishra/edastra",
     highlights: [
       "13,000+ user responses through beta testing in 3 months",
       "End-to-end UX & UI with reusable component architecture",
@@ -204,8 +205,8 @@ export const projects = [
     cardColor: "from-emerald-500/10 to-teal-500/10",
     borderColor: "border-emerald-500/20",
     hoverBorder: "hover:border-emerald-500/40",
-    liveUrl: "https://shivam-packaging.vercel.app",
-    github: "https://github.com/shreejanmishra",
+    liveUrl: "https://shivam-packaging-three.vercel.app/",
+    github: "https://github.com/shreejanmishra/shivam-packaging",
     highlights: [
       "Delivered production-ready app in one week",
       "Client requirements gathering & implementation planning",
@@ -233,8 +234,8 @@ export const projects = [
     cardColor: "from-violet-500/10 to-purple-500/10",
     borderColor: "border-violet-500/20",
     hoverBorder: "hover:border-violet-500/40",
-    liveUrl: "https://edastra-pitch.vercel.app",
-    github: "https://github.com/shreejanmishra",
+    liveUrl: "https://e-pitch.vercel.app/",
+    github: "https://github.com/shreejanmishra/edastraPitch",
     highlights: [
       "Reviewed by 4 venture capital firms",
       "Interactive D3.js data visualizations",
@@ -261,7 +262,8 @@ export const projects = [
     cardColor: "from-cyan-500/10 to-blue-500/10",
     borderColor: "border-cyan-500/20",
     hoverBorder: "hover:border-cyan-500/40",
-    github: "https://github.com/shreejanmishra",
+    liveUrl: "https://task-management-app-olive-seven.vercel.app/",
+    github: "https://github.com/shreejanmishra/TaskManagementApp",
     highlights: [
       "Bulk operations with multi-select functionality",
       "Extensive React performance optimizations",
