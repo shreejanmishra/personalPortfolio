@@ -51,7 +51,15 @@ export const skills = {
     "MongoDB",
     "PostgreSQL",
   ],
-  DevOps: ["Git/GitHub", "CI/CD", "Linux", "Vercel", "Webpack", "Vite", "Docker"],
+  DevOps: [
+    "Git/GitHub",
+    "CI/CD",
+    "Linux",
+    "Vercel",
+    "Webpack",
+    "Vite",
+    "Docker",
+  ],
   "Project Management": ["Jira", "Agile SDLC", "Confluence"],
   "AI Productivity Tools": [
     "Antigravity",
@@ -125,36 +133,6 @@ export const education = {
 };
 
 export const projects = [
-  {
-    id: "zageno",
-    title: "Zageno",
-    subtitle: "Full Stack E-Commerce Platform",
-    description:
-      "A production-grade e-commerce web application featuring ACID-compliant transactions, optimized MongoDB data layer with B-Tree indexing for instant keyword searches, and bulkWrite for O(1) inventory deductions. Includes pagination, React Query caching, hardened security with Zod validation and rate-limiting, and a Dockerized production deployment.",
-    tech: [
-      "React 19",
-      "Tailwind CSS",
-      "Zustand",
-      "React Query",
-      "Express.js",
-      "Node.js",
-      "MongoDB",
-      "Docker",
-    ],
-    icon: ShoppingCart,
-    color: "from-orange-500 to-rose-500",
-    cardColor: "from-orange-500/10 to-rose-500/10",
-    borderColor: "border-orange-500/20",
-    hoverBorder: "hover:border-orange-500/40",
-    liveUrl: "https://zageno-assignment.vercel.app/",
-    github: "https://github.com/shreejanmishra/zageno_assignment",
-    highlights: [
-      "ACID transactions preventing phantom inventory",
-      "MongoDB $text B-Tree indexing for instant search",
-      "Multi-stage Docker container with non-root security",
-      "Chunk-split & minified Vite production builds",
-    ],
-  },
   {
     id: "edastra",
     title: "Edastra",
